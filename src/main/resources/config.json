@@ -1,0 +1,75 @@
+{
+  "game": {
+    "lobby": {
+      "world": "world",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    "spec_spawn": {
+      "world": "world",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "yaw": 0.0,
+      "pitch": 0.0
+    },
+    "starter": [
+      "CgAACAACaWQAFW1pbmVjcmFmdDpjb29rZWRfYmVlZgEABUNvdW50CgIABkRhbWFnZQAAAA=="
+    ],
+    "csv_script": "var mapToCsv = function (team) {var result = ''; for each (var player in team.getEntries()) {result += (result.length == 0 ? '' : ';') + player.getName() + ';' + player.getKills() + ';' + player.getPosition()} result += (result.length == 0 ? '' : ';') + team.getTotalKills() + ';' + team.getPosition()};",
+    "specs": [
+    ]
+  },
+  "border": {
+    "center_x": 0.0,
+    "center_z": 0.0,
+    "start_size": 100.0,
+    "end_size": 50.0,
+    "shrink_start": 1500,
+    "shrink_time": 12000
+  },
+  "teams": [
+    {
+      "id": 1,
+      "size": 2,
+      "name_masculine_singular": "",
+      "name_masculine_plural": "",
+      "name_feminine_singular": "",
+      "name_feminine_plural": "",
+      "chat_color": "",
+      "dye_color": "",
+      "doors": [
+        {
+          "min_corner": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "yaw": 0.0,
+            "pitch": 0.0
+          },
+          "max_corner": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "yaw": 0.0,
+            "pitch": 0.0
+          },
+          "materials_to_destroy": [
+            "STAINED_GLASS",
+            "IRON_TRAPDOOR"
+          ]
+        }
+      ],
+      "spawn": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "yaw": 0.0,
+        "pitch": 0.0
+      }
+    }
+  ]
+}
